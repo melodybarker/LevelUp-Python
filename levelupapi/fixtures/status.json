@@ -1,0 +1,23 @@
+[
+    {
+        "model": "levelupapi.status",
+        "pk": 1,
+        "fields": {
+            "status": "upcoming"
+        }
+    },
+    {
+        "model": "levelupapi.status",
+        "pk": 2,
+        "fields": {
+            "status": "in progress"
+        }
+    },
+    {
+        "model": "levelupapi.status",
+        "pk": 3,
+        "fields": {
+            "status": "ended"
+        }
+    }
+]

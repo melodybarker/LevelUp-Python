@@ -1,0 +1,14 @@
+[
+    {
+        "model": "levelupapi.event",
+        "pk": 1,
+        "fields": {
+            "host": 1,
+            "game": 1,
+            "location": "123 Concord Rd. Brentwood, TN 37027",
+            "date": "2021-12-26",
+            "time": "12:00 PM",
+            "status": "Upcoming"
+        }
+    }
+]
