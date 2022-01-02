@@ -1,14 +1,14 @@
 from django.conf.urls import include
 from django.urls import path
 from levelupapi.views import register_user, login_user
-from rest_framework import routers
-from levelupapi.views import GameTypeView
-from levelupapi.views import GameView, Games
+from rest_framework import router
+from levelupapi.views import GameTypeView, GameView, EventView
 
 #If any client submits a GET request to either one of those URLs, you need to clearly state that the Games ViewSet will handle the request. You will use a built-in class in Django called the DefaultRouter.
-router = routers.DefaultRouter(trailing_slash=False)
+router = router.DefaultRouter(trailing_slash=False)
 router.register(r'gametypes', GameTypeView, 'gametype')
 router.register(r'games', GameView, 'game')
+router.register(r'events', EventView, 'event')
 
 urlpatterns = [
     path('', include(router.urls)),
